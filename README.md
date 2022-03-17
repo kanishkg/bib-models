@@ -1,6 +1,6 @@
-# Baselines for BIB
+# Models for BIB
 
-This repositiory includes the two behavior cloning baselines for the Baby Intuitions Benchmark.
+
 The model is trained in two stages. The first stage is a pretraineing phase where an image encoder is trained using the [ATC algorithm](https://arxiv.org/abs/2009.08319).
 In the second stage, the model is trained using behavior cloning.
 
@@ -35,18 +35,6 @@ Once the model is trained, use the following command to evaluate the model.
 python test_bc.py --data_path /path/to/train_data/ --ckpt /path/to/model/ --process_data 1 --model_type bcmlp
 ```
 
-## Cite
-If you use the model in your research, please cite the following paper:
-```
-@inproceedings{
-gandhi2021baby,
-title={Baby Intuitions Benchmark ({BIB}): Discerning the goals, preferences, and actions of others},
-author={Kanishk Gandhi and Gala Stojnic and Brenden M. Lake and Moira Dillon},
-booktitle={Thirty-Fifth Conference on Neural Information Processing Systems},
-year={2021},
-url={https://arxiv.org/abs/2102.11938}
-}
-```
 ### Hardware setup
 All models were trained on an NVIDIA 1080Ti GPU.
 
